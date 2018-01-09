@@ -4,6 +4,7 @@ With brunch
 
 cd assets
 npm install --save-dev babel-plugin-transform-runtime vue2-brunch
+npm install --save vue-router
 
 touch assets/js/vue/hello.vue
 

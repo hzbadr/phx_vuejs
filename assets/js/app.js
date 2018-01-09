@@ -21,9 +21,23 @@ import "phoenix_html"
 // import socket from "./socket"
 
 import Vue from 'vue'
-import Hello from './vue/hello.vue'
+import VueRouter from 'vue-router'
 
-new Vue({
-  el: '#main',
-  components: { Hello  }
+import Hello from './vue/hello.vue'
+import World from './vue/world.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {path: '/', component: Hello},
+  {path: '/my-hello', component: Hello},
+  {path: '/my-world', component: World},
+]
+
+const router = new VueRouter({
+  routes
 })
+
+const app = new Vue({
+  router
+}).$mount('#router-main')
