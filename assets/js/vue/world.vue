@@ -7,29 +7,23 @@
 
 <style scoped>
 a {
-    color: #AA9080;
-    background-color: #2020AA;
-
+  color: #aa9080;
+  background-color: #2020aa;
 }
 </style>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-        name: ''
-
-    }
-
+      name: ""
+    };
   },
-methods: {
-           doYell() {
-        var name = this.name.toUpperCase();
-        alert(name);
-
-           }
-
-         }
-
-}
+  methods: {
+    doYell() {
+      var name = this.name.toUpperCase();
+      alert(name);
+    }
+  }
+};
 </script>

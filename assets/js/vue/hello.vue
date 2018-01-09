@@ -7,29 +7,23 @@
 
 <style scoped>
 a {
-    color: #AA9080;
-    background-color: #2020AA;
-
+  color: #aa9080;
+  background-color: #2020aa;
 }
 </style>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-        name: ''
-
-    }
-
+      name: ""
+    };
   },
-methods: {
-           doSay() {
-        var name = this.name;
-        alert(name);
-
-           }
-
-         }
-
-}
+  methods: {
+    doSay() {
+      var name = this.name;
+      alert(name);
+    }
+  }
+};
 </script>
